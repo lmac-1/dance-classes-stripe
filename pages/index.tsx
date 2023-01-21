@@ -12,7 +12,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="w-3/5 mx-auto flex flex-col">
+      <div className="w-100 md:w-3/5 mx-auto flex flex-col">
         <h1 className="text-5xl font-extrabold antialiased mt-10 mb-5">
           Private Salsa Classes
         </h1>
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </div>
         {packageType === 1 && (
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {prices.individual.map((price) => (
               <Package
                 key={price.hours}
